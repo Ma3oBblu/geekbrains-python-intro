@@ -10,7 +10,7 @@
 # Функция должна сама работать со словарями и изменять их значения.
 
 def attack(person1, person2):
-    person2["health"] = person2["health"] - person1["damage"]
+    person2["health"] -= person1["damage"]
     print('{} нанес урон {} {}. осталось {}'.format(person1["name"], person1["damage"], person2["name"],
                                                     person2["health"]))
 

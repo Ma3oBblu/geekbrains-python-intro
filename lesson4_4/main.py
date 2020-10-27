@@ -9,13 +9,13 @@
 # Функция номер 2 используется внутри функции номер 1 для вычисления урона и вычитания его из здоровья персонажа.
 
 def attack(person1, person2):
-    damage = get_damage(person1, person2)
+    damage = get_damage(person1["damage"], person2["armor"])
     person2["health"] = person2["health"] - damage
     print(get_result(person1, person2, damage))
 
 
-def get_damage(person1, person2):
-    return round(person1["damage"] / person2["armor"])
+def get_damage(damage, armor):
+    return round(damage / armor)
 
 
 def get_result(person1, person2, damage):
