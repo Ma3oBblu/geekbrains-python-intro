@@ -173,7 +173,7 @@ my_list_2 = [2, 7, 12, 3]
 
 Если список пустой функция должна вернуть None. Проверьте работу функций в этом же модуле.
 
-Примечание: Список для проверки введите вручную. Или возьмите этот: `[1, 2, 3, 4]`
+Примечание: Список для проверки вве дите вручную. Или возьмите этот: `[1, 2, 3, 4]`
 
 
 [Решение](https://github.com/Ma3oBblu/geekbrains-python-intro/blob/main/lesson5_2/main.py)
@@ -190,3 +190,37 @@ my_list_2 = [2, 7, 12, 3]
 [Решение](https://github.com/Ma3oBblu/geekbrains-python-intro/blob/main/lesson5_3/main.py)
 
 *to run this goto main dir and use `python3 -m lesson5_3.main`*
+
+## Урок #6
+### Задание #1
+Создать модуль `music_serialize.py`. В этом модуле определить словарь для вашей любимой музыкальной группы, например:
+```
+my_favourite_group = {
+    'name': 'Г.М.О.',
+    'tracks': ['Последний месяц осени', 'Шапито'],
+    'Albums': [
+        {'name': 'Делать панк-рок', 'year': 2016},
+        {'name': 'Шапито', 'year': 2014},
+    ],
+}
+```
+
+С помощью модулей `json` и `pickle` сериализовать данный словарь в `json` и в байты, вывести результаты в терминал. 
+
+Записать результаты в файлы `group.json`, `group.pickle` соответственно. 
+
+В файле `group.json` указать кодировку utf-8.
+
+
+[Решение](https://github.com/Ma3oBblu/geekbrains-python-intro/blob/main/lesson6_1/main.py)
+
+### Задание #2
+
+Создать модуль `music_deserialize.py`. 
+
+В этом модуле открыть файлы `group.json` и `group.pickle`, прочитать из них информацию. 
+
+И получить объект: словарь из предыдущего задания.
+
+
+[Решение](https://github.com/Ma3oBblu/geekbrains-python-intro/blob/main/lesson6_2/main.py)
